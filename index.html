@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic-tac-Toe!</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	<div id = "container">
+		<div id="title"><h1>Tic-Tac-Toe</h1></div>
+		<div id="score">Player X:<span id="p1score">##</span>  Player O:<span id="p2score">##</span></div>
+		<div id="starter">Begin</div>
+		<div id="board">
+		<table id="tileholder">
+			<tr>
+				<td id="sq1" class="tile"></td>
+				<td id="sq2" class="tile"></td>
+				<td id="sq3" class="tile"></td>
+			</tr>
+			<tr>
+				<td id="sq4" class="tile"></td>
+				<td id="sq5" class="tile"></td>
+				<td id="sq6" class="tile"></td>
+			</tr>
+			<tr>
+				<td id="sq7" class="tile"></td>
+				<td id="sq8" class="tile"></td>
+				<td id="sq9" class="tile"></td>
+			</tr>
+		</table>
+
+		</div>
+	</div>
+<script type="text/javascript">
+
+var move = "X";
+	
+$(".tile").click(function(){
+
+	if (move == "X") {
+		$(this).html("O");
+		move = "O";
+	}
+	else {
+		$(this).html("X");
+		move = "X";
+	}
+
+	wincondition();
+
+})
+  	//Win Conditions Horizontal
+
+	function wincondition () {
+		//Win Conditions Horizontal
+		if ($("#sq1").html() == $("#sq2").html() && $("#sq2").html() == $("#sq3").html() && $("#sq1").html() != "") {
+		alert("You win " + $("#sq1").html() + "!!!" );
+		}
+		else if($("#sq4").html() == $("#sq5").html() && $("#sq5").html() == $("#sq6").html() && $("#sq4").html() != "") {
+		alert("You win " + $("#sq4").html() + "!!!" );
+		}	
+		else if($("#sq7").html() == $("#sq8").html() && $("#sq8").html() == $("#sq9").html() && $("#sq8").html() != "") {
+		alert("You win " + $("#sq8").html() + "!!!" );
+		}
+		//Win Conditions Verticle
+		else if($("#sq1").html() == $("#sq4").html() && $("#sq4").html() == $("#sq7").html() && $("#sq1").html() != "") {
+		alert("You win " + $("#sq1").html() + "!!!" );
+		}
+		else if($("#sq2").html() == $("#sq5").html() && $("#sq5").html() == $("#sq8").html() && $("#sq2").html() != "") {
+		alert("You win " + $("#sq2").html() + "!!!" );
+		}
+		else if($("#sq3").html() == $("#sq6").html() && $("#sq6").html() == $("#sq9").html() && $("#sq3").html() != "") {
+		alert("You win " + $("#sq3").html() + "!!!" );
+		}
+		//Win Conditions Diagonal
+		else if($("#sq1").html() == $("#sq5").html() && $("#sq5").html() == $("#sq9").html() && $("#sq1").html() != "") {
+		alert("You win " + $("#sq1").html() + "!!!" );
+		}
+		else if($("#sq3").html() == $("#sq5").html() && $("#sq5").html() == $("#sq7").html() && $("#sq3").html() != "") {
+		alert("You win " + $("#sq3").html() + "!!!" );
+		}
+	}
+
+
+
+</script>
+
+
+</body>
+</html>

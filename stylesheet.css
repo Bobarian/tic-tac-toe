@@ -1,0 +1,72 @@
+#title {
+	text-align: center;
+	border: 1px solid black;
+	background: #C4CEFF;
+	height: 60px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+#score {
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding: 10px;
+}
+
+#p1score, #p2score {
+	padding: 10px;
+}
+
+#starter {
+	border: 1px solid black;
+	border-radius: 10px;
+	background: #07AA36;
+	color: white;
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#board {
+	background: black;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tileholder {
+	margin: 0 auto;
+	padding-top: 8px;
+}
+
+.tile {
+	background: white;
+	height: 90px;
+	width: 90px;
+	text-align: center;
+	font-size: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
