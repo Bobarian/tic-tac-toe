@@ -20,7 +20,7 @@
 	padding: 10px;
 }
 
-#p1score, #p2score {
+#pXscore, #pOscore {
 	padding: 10px;
 }
 
@@ -29,7 +29,7 @@
 	border-radius: 10px;
 	background: #07AA36;
 	color: white;
-	width: 60px;
+	width: 120px;
 	height: 20px;
 	text-align: center;
 	margin: 5px;
@@ -58,6 +58,12 @@
 	text-align: center;
 	font-size: 30px;
 
+}
+
+#loopy {
+	background: white;
+	color: black;
+	font-size: 20px;
 }
 
 
